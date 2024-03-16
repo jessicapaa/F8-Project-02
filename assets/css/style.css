@@ -430,10 +430,10 @@ a {
     cursor: pointer;
 }
 
-/* .feedback-item .dot.active {
+.feedback-item .dot.active {
     background: var(--primary-color);
     cursor: default;
-} */
+}
 
 .feedback-item .content {
     margin-left: auto;
@@ -545,10 +545,12 @@ a {
     margin-top: 55px;
     display: flex;
     gap: 0 30px;
+    overflow: hidden;
 }
 
 .blog .blog-list .blog-item {
-    width: 33.33%;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     border-radius: 1.6rem;
     background: #fff;
 }
