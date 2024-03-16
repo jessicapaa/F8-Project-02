@@ -41,9 +41,8 @@ a {
 .heading {
     color: #171100;
     font-family: var(--text-font);
-    font-style: normal;
     font-weight: 700;
-    letter-spacing: -0.116rem;
+    letter-spacing: -0.02em;
 }
 
 .heading.lv1 {
@@ -66,6 +65,7 @@ a {
     color: #fff;
     background: #171100;
     border-radius: 999px;
+    border: transparent;
 }
 .btn:hover {
     opacity: 0.9;
@@ -443,4 +443,77 @@ a {
     font-size: 2.6rem;
     font-style: italic;
     line-height: 4rem; /* 153.846*/
+}
+
+/* Feature */
+
+.feature {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.feature .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .body .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.feature .body .images img {
+    width: 27rem;
+    height: 40.4rem;
+    object-fit: cover;
+    border-radius: 1.6rem;
+}
+
+.feature img.lower {
+    margin-top: 34px;
+}
+
+.feature .body .content {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.feature .content .desc {
+    color: #5f5b53;
+    margin-top: 16px;
+    font-size: 1.7rem;
+    line-height: 2.8rem; /* 175% */
+}
+
+.feature .content .desc.d1 {
+    width: 43rem;
+}
+
+.feature .content .cta-feature {
+    margin-top: 32px;
+    background: var(--primary-color);
+    color: #fff;
+    width: 13.7rem;
+}
+.feature-2nd {
+    margin-top: 70px;
+}
+.feature-2nd .body {
+    flex-direction: row-reverse;
+}
+.feature-2nd .content {
+    width: 49%;
+}
+
+.feature-2nd .content .heading,
+.feature-2nd .content .desc {
+    width: 57rem;
+}
+
+.feature-2nd .body .images img {
+    width: 470px;
+    height: 470px;
 }
