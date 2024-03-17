@@ -72,7 +72,8 @@ a {
     opacity: 0.9;
     cursor: pointer;
 }
-.dot.active {
+.blog .dots .dot.active,
+.feedback-item .dot.active {
     background: var(--primary-color);
     cursor: default;
 }
