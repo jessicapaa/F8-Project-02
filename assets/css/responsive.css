@@ -61,6 +61,7 @@
         display: inline-block;
         padding: 18px;
         font-weight: 500;
+        color: #171100;
     }
 
     .input-checkbox:checked~.overlay {
